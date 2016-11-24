@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Tutorial</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="semantic/dist/semantic.min.js"></script>
+    <style>
+    html{
+      color:black;
+      text-align:center;
+     
+    }
+    body{
+     background: url("https://www.artful.org.uk/wp-content/uploads/2013/08/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #meme{
+      padding-top:100px;
+      
+    
+    }
+    .ui acordian{
+    
+    }
+      .masthead.segment{
+        min-height: 700px;
+        padding:1em 0em;
+        
+      }
+      .masthead h1.ui.header{
+        font-size: 3em;
+      }
+      #title{
+        background-color:black;
+        padding:85px 0;
+          background: url(" http://digitalsynopsis.com/wp-content/uploads/2013/12/subtle-patterns-website-7.gif");
+        background-size: contain;
+        background-repeat: repeat;
+        
+      }
+    </style>
+</head>
+<body>
+  
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a href = "index.html" class="item">Home</a>
+    <a href = "tutorial.html" class="item">Setup</a>
+    <a href = "advancedTutorial.html" class="item">Advanced Tutorial</a>
+    <a href = "search-bar.html"class="item">Search Bar</a>
+    <a href = "memes.html" class="item">Memes</a>
+    <a href = "conclusion.html" class="item">Conclusion</a>
+    <a href = "credit.html" class="item">Credit</a>
+    </div>
+</div>
+
+<div id="title" class="ui inverted vertical masthead center aligned segement">
+   
+  <div class="ui text container">
+    <h1 class="ui inverted header">
+      Advanced Tutorial
+    </h1>
+  </div>
+</div>
+
+<div class="ui accordion">
+  <div class="active title">
+    
+    <h3><i class="dropdown icon"></i> Grids</h3>
+  </div>
+  <div class="active content">
+    <p>The grid system within Semantic-UI has a default max column of 16.</p>
+    <img src=img/tut1.PNG>
+    <p>The most basic form of the grid system would have the class name <b>ui grid</b>. </p> 
+    <p>A row is defined with class name of <b>row</b> and each column is defined within a row</p>
+    <p>The size of the column can be set as <b><i>number</i> wide column (ex. four wide column) </b> </p>
+    <p>It is possible to set the size for all columns with the name <b>ui <i>number</i> column grid (ex. ui three column grid)</b>. </p>
+   
+  </div>
+  <div class="title">
+    
+    <h3><i class="dropdown icon"></i> Images</h3>
+  </div>
+  <div class="content">
+    <p>Images can be used with Semantic-UI with the <b>ui image</b> class name</p>
+    <img src=img/tut2.png>
+    <p>You are able to change the size of the image with keywords like <b>medium, small, or large</b></p>
+    <p>There are also keywords in the class name that change appearance like <b>rounded, circular or bordered</b></p>
+  </div>
+  <div class="title">
+    
+    <h3><i class="dropdown icon"></i> Modals</h3>
+  </div>
+  <div class="content">
+    <p>To make use of modals you require an element to activate the modal</p>
+    <img src=img/tut5.png
+  </div>
+  <div class="title">
+ 
+    <h3> <i class="dropdown icon"></i>Ratings</h3>
+  </div>
+  <div class="content">
+    <img src = "img/rating.PNG">
+    <br>
+    <p>Additionally, some Javascript is required to set the amount of stars</p>
+    <br>
+    <img src = "img/ratingJS.PNG">
+  </div>
+  
+  <div class="title">
+ 
+    <h3> <i class="dropdown icon"></i>Search Bar</h3>
+  </div>
+  <div class="content">
+    <p>To make a simple search bar, you just need to use the ui search class.</p>
+    <p></p>
+
+    <img src="img/search.png">
+
+    <p>This makes use of the list of courses available in the computer science department, as listed
+        <a href="putpagehere">here</a>. These were acquired with the following advanced bash h4ck.</p>
+        <img src="img/h4ck.png">
+  </div>
+  
+</div>
+
+</body> 
+
+<script type="text/javascript">
+  $('.ui.accordion')
+  .accordion()
+;
+  
+</script>
+</html>    
+    

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+     <style>
+     html{
+      color:black;
+      text-align:center;
+     
+    }
+    body{
+     background: url("https://www.artful.org.uk/wp-content/uploads/2013/08/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #meme{
+      padding-top:100px;
+      
+    
+    }
+    .row{
+    
+    }
+      .masthead.segment{
+        min-height: 700px;
+        padding:1em 0em;
+        
+      }
+      .masthead h1.ui.header{
+        font-size: 3em;
+      }
+      #title{
+        background-color:black;
+        padding:85px 0;
+          background: url(" http://digitalsynopsis.com/wp-content/uploads/2013/12/subtle-patterns-website-7.gif");
+        background-size: contain;
+        background-repeat: repeat;
+        
+      }
+     footer{
+      /* 
+    position: absolute;
+    width:1000px;
+    right: 0;
+    bottom:0;
+    left:0;
+    padding:1rem;
+    transform: translate(-50%, -50%);
+    */
+    clear:both;
+    position:relative;
+    z-index: 10;
+    height:3em;
+    width:1000px;
+    margin-left:3em;
+    margin-top:-1em;
+     }
+     
+     p{
+       color:black;
+     font-size: 10px;
+       
+     }
+     
+     pre{
+       color:black;
+     }
+  </style>
+</head>
+   
+<body>
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a href = "index.html" class="item">Home</a>
+    <a href = "tutorial.html" class="item">Setup</a>
+    <a href = "advancedTutorial.html" class="item">Advanced Tutorial</a>
+    <a href = "search-bar.html"class="item">Search Bar</a>
+    <a href = "memes.html" class="item">Memes</a>
+    <a href = "conclusion.html" class="item">Conclusion</a>
+    <a href = "credit.html" class="item">Credit</a>
+    </div>
+</div>    
+  <div id="title" class="ui inverted vertical masthead center aligned segement">
+     <div class="ui text container">
+        <h1 class="ui inverted header">
+          Steps To Install
+        </h1>
+      </div>
+    </div>
+
+  <!-- Use this to create the thing on top -->
+   <div class="ui three top attached steps">
+    <div class="step">
+      <i class="truck icon"></i>
+      <div class="content">
+        <div class="title">Go To CPS530 Class</div>
+        <div class="description">Go to class to get marks</div>
+      </div>
+    </div>
+    <div class="active step">
+      <i class="payment icon"></i>
+      <div class="content">
+        <div class="title">SEMANTIC-UI</div>
+        <div class="description">Can you just tell me how to install this thing....</div>
+        
+      </div>
+    </div>
+    <div class="step">
+      <i class="info icon"></i>
+      <div class="content">
+        <div class="title">Panic</div>
+        <div class="description">Can I have good marks please</div>
+      </div>
+    </div>
+  </div>
+ 
+
+<div><br><br></div>
+
+
+
+
+
+
+ 
+   
+   
+   <div class="ui grid page">
+<div class="column">
+  <div class="ui segment">
+    <div class="ui menu top">
+      <a class=" item" data-tab="partZero">How to Set Up</a>
+      <a class="item" data-tab="partOne">Part One</a>
+      <a class="item" data-tab="partTwo">Part Two</a>
+      <a class = "item" data-tab="partThree">Part Three</a>
+      <a class = "item" data-tab="partFour">Part Four</a>
+       <a class = "item" data-tab="partFive">Part Five</a>
+       <a class = "item" data-tab="partSix">Part Six</a>
+       <a class = "item" data-tab="final">Finally</a>
+    </div>
+    
+    <div class="ui tab" data-tab="partZero">
+       <h1> Installing  Semantics-UI via Cloud9 (Ubuntu)</h1>
+      <h2 style = "color:red">Prerequisite: Must have nodejs</h2>
+      <div class="ui three column grid">
+  <div class="column">
+   
+      <img src = "http://www.related2gaming.com/wp-content/uploads/2015/10/c9.png" height="300" width="300">
+    
+  </div>
+  <div class="column">
+    
+      <img src = "http://grephaxs.com/wp-content/uploads/2014/01/Ubuntu-1404-VPS.jpg" height="300" width="300">
+
+  </div>
+  <div class="column">
+
+      <img src = "http://benznext.com/wp-content/uploads/2015/04/nodejs_logo_green.jpg" height="300" width="300">
+    
+  </div>
+</div>
+     
+    </div>
+    
+    <div class="ui tab" data-tab="partOne">
+      <h1>1) Straight from the command line, run:</h1>
+      <h2 style = "color:blue"> curl --silent --location https://deb.nodesource.com/setup_5.x | sudo bash -
+          sudo apt-get install --yes nodejs</h2>
+      <img src = "http://3.bp.blogspot.com/-6itZFlfknXg/T8kfFCburwI/AAAAAAAAAXg/tVINXS-6zpk/s1600/hackers-animated-crash-override.gif">
+    
+    </div>
+    
+    <div class = "ui tab" data-tab ="partTwo">
+       <h1>2) Run Gulp from command line</h1>
+       <h2 style = "color:blue">npm install -g gulp</h2>
+       <img src = "http://listcrown.com/wp-content/uploads/2013/09/gulping-of-throat.jpg">
+    </div>
+    
+    <div class="ui tab" data-tab="partThree">
+        <h1>3) Make a directory. Call it like, cps530RocksMySocks</h1>
+      <h1>4) Change to that directory and run:</h1>
+      <h2 style = "color:blue">npm install semantic-ui --save
+        cd semantic/
+        gulp build</h2>
+        <iframe src="//giphy.com/embed/f9UGlzAGNGEi4" width="480" height="290" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/icons-f9UGlzAGNGEi4">via GIPHY</a></p>
+     
+    </div>
+    
+    <div class = "ui tab" data-tab ="partFour">
+        <h1>4)Create an index.html in that directory and copy pasta the following:</h1>
+        <h2 style = "color:blue">
+          
+          &ltlink rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"> <br>
+            &ltscript src="semantic/dist/semantic.min.js"></script>
+        </h2>
+        <img style = "ui fluid image" src = "https://briankoberlein.com/wp-content/uploads/copypasta.jpg">
+    </div>
+    
+    <div class = "ui tab" data-tab ="partFive">
+      <h1>5) ????</h1>
+     <img src = "http://images.clipartpanda.com/cool-question-marks-1411213660255.jpg">
+     <img src = "https://media.giphy.com/media/GHycyakNPWSoo/giphy.gif">
+    </div>
+    
+    <div class = "ui tab" data-tab = "partSix">
+       <h1>6) Congrats, you are now a Semantic-UI-Hacker-Elite</h1>
+       <img class="ui fluid image" src = "https://media.giphy.com/media/XreQmk7ETCak0/giphy.gif" >
+    </div>
+    
+    <div class = "ui tab" data-tab = "final">
+     <h1> If all else fails, here's the website you can follow yourself at the following link:</h1>
+     <h2><a href="http://semantic-ui.com/introduction/getting-started.html">SEMANTIC UI TUTORIAL 100% WORKS, CLICK HERE</a></h2>
+     <img class = "ui fluid image" src ="http://www.townsvillenerds.com/wp-content/uploads/2015/06/Windows-Accelerator-fake-add-on-townsville.jpg">
+   </div>
+   
+   
+    
+   <script>
+   
+   
+    $('.top.menu .item').tab();   
+ 
+  </script>
+     
+        
+
+  </body>
+  
+  
+  
+</html>

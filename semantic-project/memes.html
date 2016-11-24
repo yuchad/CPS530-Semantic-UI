@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Memes</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script type="text/javascript">
+      $('.menu .item')
+        .tab();
+      
+    </script>
+    
+  
+    <style>
+    html{
+      color:black;
+      text-align:center;
+     
+    }
+    body{
+     background: url("https://www.artful.org.uk/wp-content/uploads/2013/08/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #meme{
+      padding-top:100px;
+      
+    
+    }
+    .row{
+    
+    }
+      .masthead.segment{
+        min-height: 700px;
+        padding:1em 0em;
+        
+      }
+      .masthead h1.ui.header{
+        font-size: 3em;
+      }
+      #title{
+        background-color:black;
+        padding:85px 0;
+          background: url(" http://digitalsynopsis.com/wp-content/uploads/2013/12/subtle-patterns-website-7.gif");
+        background-size: contain;
+        background-repeat: repeat;
+        
+      }
+    </style>
+  </head>
+  <body>
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a href = "index.html" class="item">Home</a>
+    <a href = "tutorial.html" class="item">Setup</a>
+    <a href = "advancedTutorial.html" class="item">Advanced Tutorial</a>
+    <a href = "search-bar.html"class="item">Search Bar</a>
+    <a href = "memes.html" class="item">Memes</a>
+    <a href = "conclusion.html" class="item">Conclusion</a>
+    <a href = "credit.html" class="item">Credit</a>
+    </div>
+</div>
+
+    <div id="title" class="ui inverted vertical masthead center aligned segement">
+   
+      <div class="ui text container">
+        <h1 class="ui inverted header">
+          Canada's Meme Market
+        </h1>
+      </div>
+    </div>
+  <div id="meme" class="ui three column grid">
+    <div class="row">
+      <div class="column">
+        <h2>FRESH</h2>
+        <a class="item" id="DT">
+          <img class="ui centered medium circular image" 
+          src="http://jewishexponent.com/sites/default/files/styles/facebook_og-image/public/article/main_image/DJT_Headshot_V2_400x400.jpg?itok=1pyNpEaX">
+        </a>
+        <div id="modaldiv1" class="ui modal">
+          <i class="close icon"></i>
+          <div class="header">
+            El Presidente
+          </div>
+          <div class="image content">
+            <div class="ui medium image">
+              <img src="https://broadly-images.vice.com/images/articles/meta/2016/04/03/the-palm-reader-who-claims-she-read-donald-trumps-hand-1459715053.jpg?crop=0.75xw:1xh;center,top">
+            </div>
+            <div class="description">
+              <div class="ui header">Donald J. Trump.</div>
+              <p>Donald John Trump (/ˈdɒnəld dʒɒn trʌmp/; born June 14, 1946) is an American businessman and the President-elect of the United States. Trump won the general election on November 8, 2016, by earning more Electoral College votes than Democratic nominee Hillary Clinton, who won the popular vote. At 70 years old, he will be the oldest man to assume the presidency.</p>
+              <p>Is it okay to use this photo?</p>
+            </div>
+          </div>
+          <div class="actions">
+            <div class="ui black deny button">
+              OK
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="column">
+        <h2>SPICY</h2>
+        <a class="item" id="JC">
+          <img class="ui centered medium circular image" 
+          src="https://pbs.twimg.com/profile_images/677508993686700035/5hQ59Dm4.png">
+        </a>
+        <div id="modaldiv2" class="ui modal">
+          <i class="close icon"></i>
+          <div class="header">
+            Oh my goodness, is that Mr.Bourne?
+          </div>
+            <div class="description">
+               <iframe width="900" height="400"
+                 src= "https://www.youtube.com/embed/xYG89rB6c5k?autoplay=0">
+               </iframe>
+            
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h2>DEAD</h2>
+       
+           <img class = "ui centered medium circular image" 
+           src="http://static.boredpanda.com/blog/wp-content/uploads/2016/06/gorilla-shot-boy-zookeper-explains-harambe-amanda-odonoughue-cincinnati-zoo-1.jpg" data-title="Elliot Fu" data-content="Elliot has been a member since July 2012">
+           
+         
+            <p> Meme Rating: 5/7 with rice</p>
+             <div class="ui massive star rating" data-rating="5">hi</div> 
+      </div>
+      
+  </div>
+
+
+
+</div>
+
+
+
+</body>  
+<script>
+  $(document).ready(function(){
+     $('#DT').click(function(){
+        $('#modaldiv1').modal('show');    
+     });
+  });
+   $(document).ready(function(){
+     $('#JC').click(function(){
+        $('.url.example .ui.embed').embed();       
+        $('#modaldiv2').modal('show');
+       
+     });
+  });
+   $(document).ready(function(){
+     $('#DT').click(function(){
+        $('#modaldiv1').modal('show');    
+     });
+  });
+  
+  $('.ui.rating')
+    .rating({
+      initialRating: 5, maxRating: 7
+    });
+    
+    $('.top.menu .item').tab();
+   
+</script>
+  
+</html>

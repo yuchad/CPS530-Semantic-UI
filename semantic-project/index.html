@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://semantic-ui.com/examples/homepage.html -->
+<html><head><title>Main</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Standard Meta -->
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="semantic/dist/semantic.min.js"></script>
+  <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 600px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+    })
+  ;
+  </script>
+</head>
+<body class="pushable">
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+ <a href = "index.html" class="item">Home</a>
+    <a href = "tutorial.html" class="item">Setup</a>
+    <a href = "advancedTutorial.html" class="item">Advanced Tutorial</a>
+    <a href = "memes.html" class="item">Memes</a>
+    <a href = "conclusion.html" class="item">Conclusion</a>
+    <a href = "credit.html" class="item">Credit</a>
+  </div>
+</div>
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+
+  <div class="ui container">
+    <div class="ui large secondary inverted pointing menu">
+      <a class="toc item">
+        <i class="sidebar icon"></i>
+      </a>
+
+    <a href = "index.html" class="item">Home</a>
+    <a href = "tutorial.html" class="item">Setup</a>
+    <a href = "advancedTutorial.html" class="item">Advanced Tutorial</a>
+    <a href = "search-bar.html" class="item">Search Bar</a>
+    <a href = "memes.html" class="item">Memes</a>
+    <a href = "conclusion.html" class="item">Conclusion</a>
+    <a href = "credit.html" class="item">Credit</a>
+    </div>
+  </div>
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        Semantic UI
+      </h1>
+      <h2>A helpful tool for front-end developers </h2>
+      <a href ="tutorial.html" class="ui huge primary button">Get Started </a>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">What is Semantic UI?</h3>
+          <p>Semantic is a development framework that helps create beautiful, responsive layouts using human-friendly HTML. It is a UI component framework based around useful principles from natural language. It offers a very well organized documentation, plus a separate website that offers guides for getting started, customizing and creating themes.</p>
+          <h3 class="ui header">How Popular is this Framework?</h3>
+          <p>It became popular over the years. It is a framework that is easy to understand. Semantic UI is an ongoing effort to make building website much more semantic. In the near future it will be one of the most famous front-end framework out there. </p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="img/devices.png" class="ui big image">
+        </div>
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid">
+      <div class="center aligned row">
+        <div class="column">
+          <h3>Strength </h3>
+          <p>Semantic class names make for a low barrier of entry, so even beginners can hit the ground running
+Small file sizes and minimal load times because you can load only the components that you need; each has its own JS file and stylesheet
+Versatile elements make for easy customization</p>
+        </div>
+        <div class="column">
+          <h3>Weakness</h3>
+          <p>
+            Very large packages when compared to Foundation and Bootstrap
+Those with more complex design and development needs may find this framework lacking
+            <img src="nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui text container">
+      <h3 class="ui header">Website that Uses Semantic UI</h3>
+      <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+      <h4 class="ui horizontal header divider">
+        <a href="tutorial.html">Let's Get Started</a>
+      </h4>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+</html>

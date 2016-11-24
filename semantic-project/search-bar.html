@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="semantic/dist/semantic.min.js"></script>
+   
+    
+    
+    
+    <style>
+    html{
+      color:black;
+      text-align:center;
+     
+    }
+    body{
+     background: url("https://www.artful.org.uk/wp-content/uploads/2013/08/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #meme{
+      padding-top:100px;
+      
+    
+    }
+      .masthead.segment{
+        min-height: 700px;
+        padding:1em 0em;
+        
+      }
+      #title{
+        background-color:black;
+        padding:85px 0;
+          background: url(" http://digitalsynopsis.com/wp-content/uploads/2013/12/subtle-patterns-website-7.gif");
+        background-size: contain;
+        background-repeat: repeat;
+        
+      }
+    </style>
+</head>
+<body>
+  
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a href = "index.html" class="item">Home</a>
+    <a href = "tutorial.html" class="item">Tutorial</a>
+    <a href = "advancedTutorial.html" class="item">Advanced Tutorial</a>
+    <a href = "search-bar.html"class="item">Search Bar</a>
+    <a href = "memes.html" class="item">Memes</a>
+    <a href = "conclusion.html" class="item">Conclusion</a>
+    <a href = "credit.html" class="item">Credit</a>
+    </div>
+</div>
+
+<div id="title" class="ui inverted vertical masthead center aligned segement">
+   
+  <div class="ui text container">
+    <h1 class="ui inverted header">
+      Course Search Bar
+    </h1>
+    
+  </div>
+</div>
+<h2>Search for a CPS course</h2>
+    
+  
+    
+
+    
+
+
+
+    <p>This makes use of the list of courses available in the computer science department, as listed
+       
+   
+      <select id="course-selection" class="ui fluid search selection dropdown" onchange="showDescription()">
+        <option value="Thesis">Thesis</option>
+        <option value="Computer Science I">Computer Science I</option>
+        <option value="Introductory Programming for Scientists">Introductory Programming for Scientists</option>
+        <option value="Digital Computation and Programming">Digital Computation and Programming</option>
+        <option value="Computer Science II">Computer Science II</option>
+        <option value="Computer Organization I">Computer Organization I</option>
+        <option value="Data Structures">Data Structures</option>
+        <option value="Computer Organization II">Computer Organization II</option>
+        <option value="Object Oriented Programming and Design">Object Oriented Programming and Design</option>
+        <option value="Advanced Programming for Scientists">Advanced Programming for Scientists</option>
+        <option value="Graphical Modeling">Graphical Modeling</option>
+        <option value="Database Applications for Scientists">Database Applications for Scientists</option>
+        <option value="Introduction to C and UNIX">Introduction to C and UNIX</option>
+        <option value="Introduction to Software Engineering">Introduction to Software Engineering</option>
+        <option value="Data Structures for Scientists">Data Structures for Scientists</option>
+        <option value="Bioinformatics">Bioinformatics</option>
+        <option value="Comparative Programming Languages">Comparative Programming Languages</option>
+        <option value="Control Systems">Control Systems</option>
+        <option value="Database Systems I">Database Systems I</option>
+        <option value="Computer Graphics">Computer Graphics</option>
+        <option value="Introduction to Multimedia Computation">Introduction to Multimedia Computation</option>
+        <option value="Component-Based Programming for the Web">Component-Based Programming for the Web</option>
+        <option value="Introduction to Operating Systems">Introduction to Operating Systems</option>
+        <option value="Foundations of Semantic Technologies">Foundations of Semantic Technologies</option>
+        <option value="Advanced Computer Organization">Advanced Computer Organization</option>
+        <option value="Autonomous Mobile Robotics">Autonomous Mobile Robotics</option>
+        <option value="Database Systems II">Database Systems II</option>
+        <option value="Human-Computer Interaction">Human-Computer Interaction</option>
+        <option value="Theory of Parsing">Theory of Parsing</option>
+        <option value="Advanced Algorithms">Advanced Algorithms</option>
+        <option value="Introduction to Multimedia Systems">Introduction to Multimedia Systems</option>
+        <option value="Web Applications">Web Applications</option>
+        <option value="Computer Security">Computer Security</option>
+        <option value="Computational Thinking in Our World">Computational Thinking in Our World</option>
+        <option value="Computer Networks I">Computer Networks I</option>
+        <option value="Software Verification and Validation">Software Verification and Validation</option>
+        <option value="Compilers and Interpreters">Compilers and Interpreters</option>
+        <option value="Applied Cryptography">Applied Cryptography</option>
+        <option value="Software Project Management">Software Project Management</option>
+        <option value="Computer Networks II">Computer Networks II</option>
+        <option value="Artificial Intelligence I">Artificial Intelligence I</option>
+        <option value="Web Technology and Performance Measurement">Web Technology and Performance Measurement</option>
+        <option value="Software Engineering I">Software Engineering I</option>
+        <option value="Telecomm Networks: Wireless Systems">Telecomm Networks: Wireless Systems</option>
+        <option value="Parallel Computer Systems">Parallel Computer Systems</option>
+        <option value="Operating Systems">Operating Systems</option>
+        <option value="Distributed Systems and Networks">Distributed Systems and Networks</option>
+        <option value="Human Robot Interaction">Human Robot Interaction</option>
+        <option value="Analysis of Algorithms">Analysis of Algorithms</option>
+        <option value="Software Engineering II">Software Engineering II</option>
+        <option value="Mainframe Systems">Mainframe Systems</option>
+        <option value="Selected Topics in Computer Science">Selected Topics in Computer Science</option>
+        <option value="Advanced Topics in Computer Science">Advanced Topics in Computer Science</option>
+        <option value="Information Retrieval and Web Search">Information Retrieval and Web Search</option>
+        <option value="Digital Image Computing">Digital Image Computing</option>
+        <option value="Data Mining">Data Mining</option>
+        <option value="Extreme Programming and Agile Processes">Extreme Programming and Agile Processes</option>
+        <option value="Compilers">Compilers</option>
+        <option value="Software Engineering">Software Engineering</option>
+      </select>
+ </div>
+
+  <div class="ui hidden divider"></div>
+ <p id="course-description"></p>
+ </div>
+
+ 
+
+</body> 
+<script>
+    var courses = {
+'Thesis': 'The student will creatively apply the material learned in core courses to a significant problem.',
+'Computer Science I': 'An introductory programming course designed to introduce fundamental Computer Science concepts such as abstraction, modelling and algorithm design. Emphasis is placed on producing correct software. This course uses Java as its programming language.',
+'Introductory Programming for Scientists': 'This course is an introduction to computer science, computers and programming for science students. Topics covered include: algorithmic thinking, computational approaches to solving problems, programming fundamentals such as elementary data structures, arrays, and basic constructs provided by high-level programming languages: sequencing, selection, iteration, and functions. Additional topics may include: numerical computation, GUI interface, and case studies of scientific computing. This course uses MATLAB as its programming language.',
+'Digital Computation and Programming': 'The C programming language is used to develop good programming techniques. Topics covered include: C program form, language statements, pseudo-code algorithmic representation, numeric data types, flow of control with selection and repetition, standard C libraries, functions and call modes, arrays, pointers, sorting, matrix operations, character and string data types, dynamic storage, structures and linked lists, file I/O. Only regular first year students from the Faculty of Engineering, Architecture, and Science may preregister for this course.',
+'Computer Science II': 'A continuation of CPS 109. Emphasis is placed on code structure, algorithm development, and Object Oriented design principles. ',
+'Computer Organization I': 'This course introduces the students to the principles and fundamentals of digital system design. Topics covered include: Binary numbers, base conversions, signed numbers, Boolean algebra, logic gates, K-map method, combinational circuits, decoders/encoders, multiplexers, sequential circuits, flip-flops, state diagram, registers, counters and addressing techniques.',
+'Data Structures': 'Introduction to data structures and algorithms. Topics may include ADTs, restricted lists (stacks and queries), generalized lists, trees, searching, sorting, hashing, graphs, algorithm design, complexity analysis, recursion.',
+'Computer Organization II': 'A continuation of CPS 213. Memory; CPU architecture and instruction set; the instruction processing sequence; generic assembler level programming illustrated for specific CPUs; I/O essentials including interrupts and DMA; characteristics of major peripherals interfaces; RISC and CISC architectures compared; parallel processing. The laboratory requires using a specific assembler/editor for the creation of programs illustrating some of the principles discussed in lectures.',
+'Object Oriented Programming and Design': 'This course further explores the Object-Oriented paradigm emphasizing the Object Model and relationships between the various artifacts. The pure Smalltalk language is introduced to reinforce the OO paradigm. The Unified Modeling Language to capture the objects, classes, and their relationships is studied in considerable depth with a major analysis and initial design project done in teams. A reasonably complete coverage of C++ is presented. Time permitting, OO features of other languages will be discussed.',
+'Advanced Programming for Scientists': 'Introduction to Object-Oriented Paradigm and Programming. Graphical User Interfaces. Event driven Paradigm and Programming. Java programming language and Java applets.',
+'Graphical Modeling': 'Use of computer graphics for scientists. Software and hardware specifications. Psychological and physiological considerations. Mathematical manipulation of 2-D and 3-D graphical objects, representation of 3-D shapes, lines and curves. Digital imagery manipulation, bitmap-based and vector-based graphics. Graphic realism using ray-tracing and fractal geometry techniques. Introduction to virtual reality. Software applications will include a professional digital imagery package and 3-D image modelers.',
+'Database Applications for Scientists': 'Implementation of database information systems. Topics include database concepts, data modeling, relational model, normal forms (up to 3NF), relational algebra, data entry, table relationships, form design, queries, SQL / QBE programming and report generation. Use of a relational database management system.',
+'Introduction to C and UNIX': 'The course covers various aspects of the C language such as: Arrays, strings, pointers, structures, etc. The second part of the course introduces UNIX operating systems. Topics include: I/O, redirection, processes, shell scripts, etc.',
+'Introduction to Software Engineering': 'This course introduces the study of Object-Oriented software engineering. Topics include software project management, requirements gathering, requirements analysis, modeling, design, implementation and testing. UML diagrams and design patterns are also discussed. A major portion of the course is a team project, taking a system from the initial requirements to the final implementation. (2 hr Lab every other week).',
+'Data Structures for Scientists': 'Introduction to data structures and algorithms. Topics include ADTs, restricted lists (stacks and queries), generalized lists, trees, searching, sorting, hashing, graphs, algorithm design, introductory complexity analysis, recursion.',
+'Bioinformatics': 'Introduction to analysis, management, and visualization of cellular information at the molecular level. The course includes an overview of mathematical modeling and simulation, pattern matching, methods for phylogenetics, gene recognition, distributed and parallel biological computing, designing and managing biological databases (both relational and object-oriented), linking disparate databases and data, data mining, reasoning by analogy, hypothesis formation and testing by machine.',
+'Comparative Programming Languages': 'A survey of major programming paradigms. Discussion of data typing, program decomposition, scoping rules, control structures parameter passing. In addition, several small but useful languages are introduced, such as Python, Ruby and ML.',
+'Control Systems': 'An introduction to the fundamentals of automatic control systems as applied to computer controlled process operations. Feedback and feedforward concepts, transfer functions, and system response. Frequency response analysis and design with computer simulation. State Space methods for multivariable systems, controllability, observability, Optimal control and Stability.',
+'Database Systems I': 'Advanced file management techniques involving fundamentals of database organization, design and management. Emphasis is given to Relational Database Management Systems including relational algebra, normal Forms, physical Database Structures and their implementation, and Relational Database Languages. Other types of Database Managers are also discussed such as Hierarchical, Network and Inverted Files.',
+'Computer Graphics': 'Software and hardware considerations in computer graphics. Mathematical manipulation of graphical objects; interactive graphics and the user interface; representation of 3-D shapes; fundamental implementation of algorithms.',
+'Introduction to Multimedia Computation': 'Introduction to computing and programming for non-computer science majors. This course introduces the student to computers and the mind set of computing how to solve problems by developing algorithms and writing programs. The programming language is Python, and the problems are taken from the domain of multimedia (manipulation of images and sounds).',
+'Component-Based Programming for the Web': 'This course presents the concepts and applications of component-based Web programming. Part 1 of the course covers the creation of Web pages to hold the components (XHTML, CSS). Part 2 covers the concepts and applications of server-side programming (CGI, SSI, Perl). Part 3 covers the development of components in Java (Java Applets, JavaBeans). Part 4 introduces activeX components.',
+'Introduction to Operating Systems': 'Introduction to O/S (system calls, interrupts, synchronous and asynchronous traps, O/S structure), using processes (process communication and synchronization), primitive communications (signals and signal management calls), pipes, messages, semaphores, shared memory, memory management, file systems, and (time permitting) remote procedure calls.',
+'Foundations of Semantic Technologies': 'This course provides introduction to semantic technologies, including W3C recommended languages for developing ontologies. First, basics of formal logic are reviewed. Second, XML, RDF and RDF Schema are discussed. Third, description logics are introduced. Fourth, syntax and semantics of OWL2 are discussed, including distinction between fragments of OWL2. Fifth, basics of rule interchange languages RIF are introduced. Additional topics can be discussed if time permits.',
+'Advanced Computer Organization': 'An advanced overview of computer architecture and organization. A study of the relationship between software and hardware and how this affects the design of architectural features: instruction execution, processor internals (including pipelining, parallelism and microcode). Instruction sets, memory and caches, busses, auxiliary storage (disk) controllers and vector processors.',
+'Autonomous Mobile Robotics': 'An introductory course in the design and implementation of autonomous vehicles. Topics will include the nature of autonomy and autonomous behaviour. Issues involving sensing and actuation will be discussed. Students will be introduced to the constraints and issues involved in building systems designed to interact with an environment independently. Students will be expected to construct working robots.',
+'Database Systems II': 'Transformations of Relational to Network and Hierarchical Models and vice versa. Embedded DB languages, Concurrency Control, Recovery Procedures, Security and Integrity of DBS. Transaction Processing. Database Machines, Front-end Subsystems, Admin. Facilities. Distributed Databases: Concurrency Control through Locking, and Recovery. Also, discussed: The Nested Relational Model, The Semantic DB Model, The O-O DB Model and the Logic Based/Expert DB Systems.',
+'Human-Computer Interaction': 'This course introduces the concepts of human-computer interaction and usability testing. Topics include: human information processing, usability principles, models of interaction, user interface paradigms, design of user interfaces. Students will also learn how to develop Graphical User Interfaces using a specific User Interface Management system. (2 hr. Lab every other week).',
+'Theory of Parsing': 'This course introduces students to scanning and parsing and the theory of computation that supports these activities. Topics include: regular expressions and languages, finite state automata, scanning, context-free languages, pushdown automata, parsing, Turing machines, computability, and NP-completeness.',
+'Advanced Algorithms': 'Order notations, the greedy method, job scheduling, correctness, exchange argument, divide and conquer techniques, recurrence equations, the master method, integer multiplications, dynamic programming, matrix chain-product, the knapsack problem, graph algorithms (minimum spanning trees, single-source shortest paths, all-pairs shortest paths), text processing and pattern matching techniques, approximation algorithms.',
+'Introduction to Multimedia Systems': 'Multimedia data is becoming increasingly important in many scientific and commercial arenas. In this course, students will be introduced to principles and current technologies of multimedia system design. Topics include: multimedia data representation, processing multimedia visual information, video and audio compression, retrieval of multimedia data, such as text, graphics, colour images and video. In addition, issues related to multimedia hardware and software as well as specific applications will be discussed.',
+'Web Applications': 'This course is a follow up to CPS 530. In it, students will learn advanced techniques for designing and building the active web pages. Topics include: JavaScript and DOM, XML and XSLT, CGI programming using PHP, database connectivity and web security, and Java servlets and JSP. At the end of this course, students will have designed and implemented a database application with a commercial grade web interface. (2 hr. Lab every other week).',
+'Computer Security': 'History and examples of computer crime. Security policies and mechanisms. Access control models. Implementation and usability issues. Physical security. Authentication technologies. Operating system security. Encryption algorithms and protocols. External and internal firewalls. Software flaws and malware. Ethical issues in computer security. Sample privacy noncompliance litigation cases, Social implications of computing networked communication.',
+'Computational Thinking in Our World': 'This course will discuss why computers and computation are ubiquitous in our world and the implications of that ubiquity, including security, gaming, military, GPS, social-networks, stock-trading, voting, and beyond. Students will learn how these systems work at an appropriate level of detail. To give a deeper understanding of these topics a significant component of the course will be student programming labs to explore simple versions of these systems. No previous programming experience will be required. ',
+'Computer Networks I': 'Internet, the network edge, the network core, delay, loss and throughput, protocol layers. Application Layer: principles of network applications, web. Transport Layer -UDP, connection oriented transport TCP, TCP congestion control. Network layer -The internet protocol (IP): Forwarding and addressing in the Internet. Routing algorithms. The link layer and local area networks.',
+'Software Verification and Validation': 'This course introduces the topics of verification and validation of computer software. Material covered may include statistical and functional approaches to testing, test data analysis, testability, static analysis techniques, dynamic analysis techniques, selected state-of-the-art results, and real-world applications.',
+'Compilers and Interpreters': 'Introduction to modern compiler design: theory, techniques, and tools. Students will develop an interpreter or compiler. Assembler and preprocessors will also be briefly discussed.'
+}
+  
+    $('.ui.dropdown')
+      .dropdown();
+
+  
+
+    function showDescription() {
+      var selection = $('#course-selection')
+      options = Object.keys(selection['0']);
+      for (var i =0 ; i < options.length; i++) {
+        if (selection['0'][i].selected) {
+          var val = selection['0'][i].value;
+          $('#course-description').html(courses[val]);
+        }
+      }
+    }
+
+  </script>
+</html>    
+    

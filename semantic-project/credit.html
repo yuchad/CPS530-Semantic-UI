@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Credit</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="semantic/dist/semantic.min.js"></script>
+    <style>
+    html{
+      color:black;
+      text-align:center;
+     
+    }
+    body{
+     background: url("https://www.artful.org.uk/wp-content/uploads/2013/08/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #meme{
+      padding-top:100px;
+      
+    
+    }
+    .row{
+    
+    }
+      .masthead.segment{
+        min-height: 700px;
+        padding:1em 0em;
+        
+      }
+      .masthead h1.ui.header{
+        font-size: 3em;
+      }
+      #title{
+        background-color:black;
+        padding:85px 0;
+          background: url(" http://digitalsynopsis.com/wp-content/uploads/2013/12/subtle-patterns-website-7.gif");
+        background-size: contain;
+        background-repeat: repeat;
+        
+      }
+    </style>
+</head>
+
+<body>
+  
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a href = "index.html" class="item">Home</a>
+    <a href = "tutorial.html" class="item">Setup</a>
+    <a href = "advancedTutorial.html" class="item">Advanced Tutorial</a>
+    <a href = "search-bar.html"class="item">Search Bar</a>
+    <a href = "memes.html" class="item">Memes</a>
+    <a href = "conclusion.html" class="item">Conclusion</a>
+    <a href = "credit.html" class="item">Credit</a>
+    </div>
+</div>
+
+<div id="title" class="ui inverted vertical masthead center aligned segement">
+   
+  <div class="ui text container">
+    <h1 class="ui inverted header">
+      Credit
+    </h1>
+  </div>
+</div>
+
+<div style = "margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);">
+<div class="ui people shape">
+  <div class="sides">
+     
+    <div class=" active side">
+      <div class="ui card">
+        <div class="image">
+          <img style ="width:290px; height:300px;" src="img/hartej.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Hartej Lehal</div>
+          <div class="meta">
+            <a>Web developer - Intern</a>
+          </div>
+          <div class="description">
+            Responsible for: Home
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="side">
+      <div class="ui card">
+        <div class="image">
+          <img style ="width:290px; height:300px;" src="img/chad.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Chad Yu</div>
+          <div class="meta">
+            <a>Junior Meme Specialist</a>
+          </div>
+          <div class="description">
+              Responsible for: Tutorial
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="side">
+      <div class="ui card">
+        <div class="image">
+          <img style ="width:290px; height:300px;" src="img/zainab.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Zainab Rizvi</div>
+          <div class="meta">
+            <a>Senior Web Developer</a>
+          </div>
+          <div class="description">
+            Responsible for: Advanced Tutorial and Search
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="side">
+      <div class="ui card">
+        <div class="image">
+          <img style ="width:290px; height:300px;" src="img/jacob.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Jacob Baustista</div>
+          <div class="meta">
+            <a>Senior Meme Specialist</a>
+          </div>
+          <div class="description">
+            Responsible for: Memes
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class=" side">
+      <div class="ui card">
+        <div class="image">
+          <img style ="width:290px; height:300px;" src="img/fahim.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Mahmudulla Fahim</div>
+          <div class="meta">
+            <a>Web Designer</a>
+          </div>
+          <div class="description">
+            Responsible for: Conclusion and Credit
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+<div style = "margin: 0;
+          position: absolute;
+          top: 75%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);">
+
+<div class="ui ignored icon direction buttons">
+  <div class="ui button" onclick ="left()" data-animation="flip" title="Flip Left" data-direction="left"><i class="left long arrow icon"></i></div>
+  <div class="ui button" onclick ="up()" data-animation="flip" title="Flip Up" data-direction="up"><i class="up long arrow icon"></i></div>
+  <div class="ui icon button" onclick ="down()" data-animation="flip" title="Flip Down" data-direction="down"><i class="down long arrow icon"></i></div>
+  <div class="ui icon button" onclick ="right()" data-animation="flip" title="Flip Right" data-direction="right"><i class="right long arrow icon"></i></div>
+</div>
+  <div class="ui ignored icon direction buttons">
+  <div class="ui button" onclick ="over()" title="Flip Over" data-animation="flip" data-direction="over"><i class="retweet icon"></i></div>
+  <div class="ui button" onclick ="back()" title="Flip Back" data-animation="flip" data-direction="back"><i class="flipped retweet icon"></i></div>
+</div>
+</div>
+ 
+</body> 
+
+<script>
+function left(){
+  $('.shape')
+  .shape('flip left')
+  $('.shape').shape('repaint')
+;
+}
+function right(){
+  $('.shape')
+  .shape('flip right')
+  $('.shape').shape('repaint')
+;
+}
+function up(){
+  $('.shape')
+  .shape('flip up')
+  $('.shape').shape('repaint')
+;
+}
+function down(){
+  $('.shape')
+  .shape('flip down')
+  $('.shape').shape('repaint')
+;
+}
+function over(){
+  $('.shape')
+  .shape('flip over')
+  $('.shape').shape('repaint')
+;
+}
+function back(){
+  $('.shape')
+  .shape('flip back')
+  $('.shape').shape('repaint')
+;
+}
+</script>
+
+</html>    
+    

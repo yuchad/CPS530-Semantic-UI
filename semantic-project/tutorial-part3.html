@@ -1,0 +1,476 @@
+
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="semantic/dist/semantic.min.js"></script>
+     <style>
+     body, html { height: 100%; }
+     body {
+      background-color: #444;
+      color: rgba(255, 255, 255, 1);
+      background-repeat: repeat;
+      background-size: 100%;
+      background-position: 75% 0%;
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0);
+
+
+     
+    }
+
+    h1{
+      font-size: 48px;
+    }
+
+
+    </style>
+    </head>
+   
+  <body>
+  <center>
+  <h1>Semantic-UI Tutorial</h1>
+  <br>
+  
+  </center>
+  <!-- Use this to create the thing on top -->
+   <div class="ui three top attached steps" style="height:80%; background-image:url(http://enlight-app.appspot.com.storage.googleapis.com/20140612_SR_Ruth_1_6120331.jpg);">
+   
+      <div class="step"  style="background-color:white; opacity:0.9">
+        <i class="search icon"></i>
+        <div class="content">
+        <a href="#course-search">
+          <div class="title">Course Search</div>
+          <div class="description">Make a simple search bar to find courses in the Computer Science department.</div>
+          </a>
+        </div>
+      </div>
+    
+  
+ 
+      <div class="step" style="background-color:white; opacity:0.9;">
+
+        <i class="file image outline icon"></i>
+        <div class="content">
+        <a href="#meme-market">
+          <div class="title">Meme Market</div>
+          <div class="description">write whatever it does here</div>
+        </a>
+        </div>
+      </div>
+   
+
+    <div class="step" style="background-color:white; opacity:0.9">
+      <i class="write icon"></i>
+      <div class="content">
+      <a href="#music-section">
+        <div class="title">Play siq music</div>
+        <div class="description">listen to siq music on da web</div>
+      </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+
+  <center>
+  <div class="ui aligned center" id="course-search"
+  style="position=absolute; height=30px">
+    <h2>Course Search</h2>
+    <p>To make a simple search bar, you just need to use the ui search class.</p>
+    <p></p>
+
+    <img src="img/search.png">
+
+    <p>This makes use of the list of courses available in the computer science department, as listed
+        <a href="putpagehere">here</a>. These were acquired with the following advanced bash h4ck.</p>
+        <img src="img/h4ck.png">
+    <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+      <select id="course-selection" class="ui fluid search selection dropdown" onchange="showDescription()">
+        <option value="Thesis">Thesis</option>
+        <option value="Computer Science I">Computer Science I</option>
+        <option value="Introductory Programming for Scientists">Introductory Programming for Scientists</option>
+        <option value="Digital Computation and Programming">Digital Computation and Programming</option>
+        <option value="Computer Science II">Computer Science II</option>
+        <option value="Computer Organization I">Computer Organization I</option>
+        <option value="Data Structures">Data Structures</option>
+        <option value="Computer Organization II">Computer Organization II</option>
+        <option value="Object Oriented Programming and Design">Object Oriented Programming and Design</option>
+        <option value="Advanced Programming for Scientists">Advanced Programming for Scientists</option>
+        <option value="Graphical Modeling">Graphical Modeling</option>
+        <option value="Database Applications for Scientists">Database Applications for Scientists</option>
+        <option value="Introduction to C and UNIX">Introduction to C and UNIX</option>
+        <option value="Introduction to Software Engineering">Introduction to Software Engineering</option>
+        <option value="Data Structures for Scientists">Data Structures for Scientists</option>
+        <option value="Bioinformatics">Bioinformatics</option>
+        <option value="Comparative Programming Languages">Comparative Programming Languages</option>
+        <option value="Control Systems">Control Systems</option>
+        <option value="Database Systems I">Database Systems I</option>
+        <option value="Computer Graphics">Computer Graphics</option>
+        <option value="Introduction to Multimedia Computation">Introduction to Multimedia Computation</option>
+        <option value="Component-Based Programming for the Web">Component-Based Programming for the Web</option>
+        <option value="Introduction to Operating Systems">Introduction to Operating Systems</option>
+        <option value="Foundations of Semantic Technologies">Foundations of Semantic Technologies</option>
+        <option value="Advanced Computer Organization">Advanced Computer Organization</option>
+        <option value="Autonomous Mobile Robotics">Autonomous Mobile Robotics</option>
+        <option value="Database Systems II">Database Systems II</option>
+        <option value="Human-Computer Interaction">Human-Computer Interaction</option>
+        <option value="Theory of Parsing">Theory of Parsing</option>
+        <option value="Advanced Algorithms">Advanced Algorithms</option>
+        <option value="Introduction to Multimedia Systems">Introduction to Multimedia Systems</option>
+        <option value="Web Applications">Web Applications</option>
+        <option value="Computer Security">Computer Security</option>
+        <option value="Computational Thinking in Our World">Computational Thinking in Our World</option>
+        <option value="Computer Networks I">Computer Networks I</option>
+        <option value="Software Verification and Validation">Software Verification and Validation</option>
+        <option value="Compilers and Interpreters">Compilers and Interpreters</option>
+        <option value="Applied Cryptography">Applied Cryptography</option>
+        <option value="Software Project Management">Software Project Management</option>
+        <option value="Computer Networks II">Computer Networks II</option>
+        <option value="Artificial Intelligence I">Artificial Intelligence I</option>
+        <option value="Web Technology and Performance Measurement">Web Technology and Performance Measurement</option>
+        <option value="Software Engineering I">Software Engineering I</option>
+        <option value="Telecomm Networks: Wireless Systems">Telecomm Networks: Wireless Systems</option>
+        <option value="Parallel Computer Systems">Parallel Computer Systems</option>
+        <option value="Operating Systems">Operating Systems</option>
+        <option value="Distributed Systems and Networks">Distributed Systems and Networks</option>
+        <option value="Human Robot Interaction">Human Robot Interaction</option>
+        <option value="Analysis of Algorithms">Analysis of Algorithms</option>
+        <option value="Software Engineering II">Software Engineering II</option>
+        <option value="Mainframe Systems">Mainframe Systems</option>
+        <option value="Selected Topics in Computer Science">Selected Topics in Computer Science</option>
+        <option value="Advanced Topics in Computer Science">Advanced Topics in Computer Science</option>
+        <option value="Information Retrieval and Web Search">Information Retrieval and Web Search</option>
+        <option value="Digital Image Computing">Digital Image Computing</option>
+        <option value="Data Mining">Data Mining</option>
+        <option value="Extreme Programming and Agile Processes">Extreme Programming and Agile Processes</option>
+        <option value="Compilers">Compilers</option>
+        <option value="Software Engineering">Software Engineering</option>
+      </select>
+ </div>
+ <div class="ui container">
+ <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div><div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div><div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+ <p id="course-description"></p>
+ </div>
+ </center>
+
+<div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <center>
+  <div class="ui aligned center" id="meme-market"
+  style="position=absolute; height=30px">
+    <h2>Add Pictures etc</h2>
+    <p>basically how the meme shit was made</p>
+    <div class="ui music" style="width:20%"></div>
+  </div>
+ </center>
+
+ <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+
+    <center>
+  <div class="ui aligned center" id="music-section"
+  style="position=absolute; height=30px">
+    <h2>da music</h2>
+     <select id="course-selection" class="ui fluid search selection dropdown" onchange="play()">
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/01-prelude-to-final-fantasy-xiii.mp3">prelude</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/02-final-fantasy-xiii-the-promise.mp3">final</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/03-the-thirteenth-day.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/04-defiers-of-fate.mp3">defiers</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/05-sabers-edge.mp3">sabers</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/06-the-hanging-edge.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/07-those-for-the-purge.mp3">those</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/08-the-warpath-home.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/09-the-pulse-falcie.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/10-face-it-later.mp3">face</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/11-snows-theme.mp3">snows</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/12-the-vestige.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/13-ragnarok.mp3">ragnarok</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/14-in-the-sky-that-night.mp3">in</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/15-promised-eternity.mp3">promised</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/16-eternal-love.mp3">eternal</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/17-lake-bresha.mp3">lake</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/18-the-pulse-lcie.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-1/19-eidolons.mp3">eidolons</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/01-blinded-by-light.mp3">blinded</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/02-glorys-fanfare.mp3">glorys</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/03-battle-results.mp3">battle</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/04-a-brief-respite.mp3">a</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/05-cavalry-theme.mp3">cavalry</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/06-escape.mp3">escape</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/07-crash-landing.mp3">crash</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/08-daddys-got-the-blues.mp3">daddys</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/09-the-vile-peaks.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/10-lightnings-theme.mp3">lightnings</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/11-sazhs-theme.mp3">sazhs</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/12-march-of-the-dreadnoughts.mp3">march</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/13-the-gapra-whitewood.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/14-tension-in-the-air.mp3">tension</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/15-forever-fugitives.mp3">forever</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/16-the-sunleth-waterscape.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/17-lost-hope.mp3">lost</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/18-to-hunt-lcie.mp3">to</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/19-no-way-to-live.mp3">no</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/20-sustained-by-hate.mp3">sustained</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/21-the-pulse-lcie.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-2/22-serahs-theme.mp3">serahs</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/01-cant-catch-a-break.mp3">cant</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/02-psicom.mp3">psicom</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/03-hopes-theme.mp3">hopes</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/04-this-is-your-home.mp3">this</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/05-atonement.mp3">atonement</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/06-vanilles-theme.mp3">vanilles</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/07-the-final-stage.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/08-the-pompa-sancta.mp3">the</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/09-nautilus.mp3">nautilus</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/10-chocobos-of-cocoon-chasing-dreams.mp3">chocobos</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/11-feast-of-betrayal.mp3">feast</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/12-eidolons-on-parade.mp3">eidolons</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/13-test-of-the-lcie.mp3">test</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/14-all-the-world-against-us.mp3">all</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/15-game-over.mp3">game</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/16-primarch-dysley.mp3">primarch</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/17-fighting-fate.mp3">fighting</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/18-separate-paths.mp3">separate</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/19-setting-you-free.mp3">setting</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/20-desperate-struggle.mp3">desperate</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/21-mysteries-abound.mp3">mysteries</option>
+        <option value="http://www.ffmages.com/final-fantasy-xiii/original-soundtrack//ffxiii/ost/disc-3/22-will-to-fight.mp3">will</option>
+        </select>
+
+    <div class="ui music" style="width:20%"></div>
+  </div>
+ </center>
+ <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui hidden divider"></div>
+
+  </body>
+  <script>
+    var courses = {
+'Thesis': 'The student will creatively apply the material learned in core courses to a significant problem.',
+'Computer Science I': 'An introductory programming course designed to introduce fundamental Computer Science concepts such as abstraction, modelling and algorithm design. Emphasis is placed on producing correct software. This course uses Java as its programming language.',
+'Introductory Programming for Scientists': 'This course is an introduction to computer science, computers and programming for science students. Topics covered include: algorithmic thinking, computational approaches to solving problems, programming fundamentals such as elementary data structures, arrays, and basic constructs provided by high-level programming languages: sequencing, selection, iteration, and functions. Additional topics may include: numerical computation, GUI interface, and case studies of scientific computing. This course uses MATLAB as its programming language.',
+'Digital Computation and Programming': 'The C programming language is used to develop good programming techniques. Topics covered include: C program form, language statements, pseudo-code algorithmic representation, numeric data types, flow of control with selection and repetition, standard C libraries, functions and call modes, arrays, pointers, sorting, matrix operations, character and string data types, dynamic storage, structures and linked lists, file I/O. Only regular first year students from the Faculty of Engineering, Architecture, and Science may preregister for this course.',
+'Computer Science II': 'A continuation of ',
+'Computer Organization I': 'This course introduces the students to the principles and fundamentals of digital system design. Topics covered include: Binary numbers, base conversions, signed numbers, Boolean algebra, logic gates, K-map method, combinational circuits, decoders/encoders, multiplexers, sequential circuits, flip-flops, state diagram, registers, counters and addressing techniques.',
+'Data Structures': 'Introduction to data structures and algorithms. Topics may include ADTs, restricted lists (stacks and queries), generalized lists, trees, searching, sorting, hashing, graphs, algorithm design, complexity analysis, recursion.',
+'Computer Organization II': 'A continuation of ',
+'Object Oriented Programming and Design': 'This course further explores the Object-Oriented paradigm emphasizing the Object Model and relationships between the various artifacts. The pure Smalltalk language is introduced to reinforce the OO paradigm. The Unified Modeling Language to capture the objects, classes, and their relationships is studied in considerable depth with a major analysis and initial design project done in teams. A reasonably complete coverage of C++ is presented. Time permitting, OO features of other languages will be discussed.',
+'Advanced Programming for Scientists': 'Introduction to Object-Oriented Paradigm and Programming. Graphical User Interfaces. Event driven Paradigm and Programming. Java programming language and Java applets.',
+'Graphical Modeling': 'Use of computer graphics for scientists. Software and hardware specifications. Psychological and physiological considerations. Mathematical manipulation of 2-D and 3-D graphical objects, representation of 3-D shapes, lines and curves. Digital imagery manipulation, bitmap-based and vector-based graphics. Graphic realism using ray-tracing and fractal geometry techniques. Introduction to virtual reality. Software applications will include a professional digital imagery package and 3-D image modelers.',
+'Database Applications for Scientists': 'Implementation of database information systems. Topics include database concepts, data modeling, relational model, normal forms (up to 3NF), relational algebra, data entry, table relationships, form design, queries, SQL / QBE programming and report generation. Use of a relational database management system.',
+'Introduction to C and UNIX': 'The course covers various aspects of the C language such as: Arrays, strings, pointers, structures, etc. The second part of the course introduces UNIX operating systems. Topics include: I/O, redirection, processes, shell scripts, etc.',
+'Introduction to Software Engineering': 'This course introduces the study of Object-Oriented software engineering. Topics include software project management, requirements gathering, requirements analysis, modeling, design, implementation and testing. UML diagrams and design patterns are also discussed. A major portion of the course is a team project, taking a system from the initial requirements to the final implementation. (2 hr Lab every other week).',
+'Data Structures for Scientists': 'Introduction to data structures and algorithms. Topics include ADTs, restricted lists (stacks and queries), generalized lists, trees, searching, sorting, hashing, graphs, algorithm design, introductory complexity analysis, recursion.',
+'Bioinformatics': 'Introduction to analysis, management, and visualization of cellular information at the molecular level. The course includes an overview of mathematical modeling and simulation, pattern matching, methods for phylogenetics, gene recognition, distributed and parallel biological computing, designing and managing biological databases (both relational and object-oriented), linking disparate databases and data, data mining, reasoning by analogy, hypothesis formation and testing by machine.',
+'Comparative Programming Languages': 'A survey of major programming paradigms. Discussion of data typing, program decomposition, scoping rules, control structures parameter passing. In addition, several small but useful languages are introduced, such as Python, Ruby and ML.',
+'Control Systems': 'An introduction to the fundamentals of automatic control systems as applied to computer controlled process operations. Feedback and feedforward concepts, transfer functions, and system response. Frequency response analysis and design with computer simulation. State Space methods for multivariable systems, controllability, observability, Optimal control and Stability.',
+'Database Systems I': 'Advanced file management techniques involving fundamentals of database organization, design and management. Emphasis is given to Relational Database Management Systems including relational algebra, normal Forms, physical Database Structures and their implementation, and Relational Database Languages. Other types of Database Managers are also discussed such as Hierarchical, Network and Inverted Files.',
+'Computer Graphics': 'Software and hardware considerations in computer graphics. Mathematical manipulation of graphical objects; interactive graphics and the user interface; representation of 3-D shapes; fundamental implementation of algorithms.',
+'Introduction to Multimedia Computation': 'Introduction to computing and programming for non-computer science majors. This course introduces the student to computers and the mind set of computing how to solve problems by developing algorithms and writing programs. The programming language is Python, and the problems are taken from the domain of multimedia (manipulation of images and sounds).',
+'Component-Based Programming for the Web': 'This course presents the concepts and applications of component-based Web programming. Part 1 of the course covers the creation of Web pages to hold the components (XHTML, CSS). Part 2 covers the concepts and applications of server-side programming (CGI, SSI, Perl). Part 3 covers the development of components in Java (Java Applets, JavaBeans). Part 4 introduces activeX components.',
+'Introduction to Operating Systems': 'Introduction to O/S (system calls, interrupts, synchronous and asynchronous traps, O/S structure), using processes (process communication and synchronization), primitive communications (signals and signal management calls), pipes, messages, semaphores, shared memory, memory management, file systems, and (time permitting) remote procedure calls.',
+'Foundations of Semantic Technologies': 'This course provides introduction to semantic technologies, including W3C recommended languages for developing ontologies. First, basics of formal logic are reviewed. Second, XML, RDF and RDF Schema are discussed. Third, description logics are introduced. Fourth, syntax and semantics of OWL2 are discussed, including distinction between fragments of OWL2. Fifth, basics of rule interchange languages RIF are introduced. Additional topics can be discussed if time permits.',
+'Advanced Computer Organization': 'An advanced overview of computer architecture and organization. A study of the relationship between software and hardware and how this affects the design of architectural features: instruction execution, processor internals (including pipelining, parallelism and microcode). Instruction sets, memory and caches, busses, auxiliary storage (disk) controllers and vector processors.',
+'Autonomous Mobile Robotics': 'An introductory course in the design and implementation of autonomous vehicles. Topics will include the nature of autonomy and autonomous behaviour. Issues involving sensing and actuation will be discussed. Students will be introduced to the constraints and issues involved in building systems designed to interact with an environment independently. Students will be expected to construct working robots.',
+'Database Systems II': 'Transformations of Relational to Network and Hierarchical Models and vice versa. Embedded DB languages, Concurrency Control, Recovery Procedures, Security and Integrity of DBS. Transaction Processing. Database Machines, Front-end Subsystems, Admin. Facilities. Distributed Databases: Concurrency Control through Locking, and Recovery. Also, discussed: The Nested Relational Model, The Semantic DB Model, The O-O DB Model and the Logic Based/Expert DB Systems.',
+'Human-Computer Interaction': 'This course introduces the concepts of human-computer interaction and usability testing. Topics include: human information processing, usability principles, models of interaction, user interface paradigms, design of user interfaces. Students will also learn how to develop Graphical User Interfaces using a specific User Interface Management system. (2 hr. Lab every other week).',
+'Theory of Parsing': 'This course introduces students to scanning and parsing and the theory of computation that supports these activities. Topics include: regular expressions and languages, finite state automata, scanning, context-free languages, pushdown automata, parsing, Turing machines, computability, and NP-completeness.',
+'Advanced Algorithms': 'Order notations, the greedy method, job scheduling, correctness, exchange argument, divide and conquer techniques, recurrence equations, the master method, integer multiplications, dynamic programming, matrix chain-product, the knapsack problem, graph algorithms (minimum spanning trees, single-source shortest paths, all-pairs shortest paths), text processing and pattern matching techniques, approximation algorithms.',
+'Introduction to Multimedia Systems': 'Multimedia data is becoming increasingly important in many scientific and commercial arenas. In this course, students will be introduced to principles and current technologies of multimedia system design. Topics include: multimedia data representation, processing multimedia visual information, video and audio compression, retrieval of multimedia data, such as text, graphics, colour images and video. In addition, issues related to multimedia hardware and software as well as specific applications will be discussed.',
+'Web Applications': 'This course is a follow up to ',
+'Computer Security': 'History and examples of computer crime. Security policies and mechanisms. Access control models. Implementation and usability issues. Physical security. Authentication technologies. Operating system security. Encryption algorithms and protocols. External and internal firewalls. Software flaws and malware. Ethical issues in computer security. Sample privacy noncompliance litigation cases, Social implications of computing networked communication.',
+'Computational Thinking in Our World': 'This course will discuss why computers and computation are ubiquitous in our world and the implications of that ubiquity, including security, gaming, military, GPS, social-networks, stock-trading, voting, and beyond. Students will learn how these systems work at an appropriate level of detail. To give a deeper understanding of these topics a significant component of the course will be student programming labs to explore simple versions of these systems. No previous programming experience will be required. ',
+'Computer Networks I': 'Internet, the network edge, the network core, delay, loss and throughput, protocol layers. Application Layer: principles of network applications, web. Transport Layer -UDP, connection oriented transport TCP, TCP congestion control. Network layer -The internet protocol (IP): Forwarding and addressing in the Internet. Routing algorithms. The link layer and local area networks.',
+'Software Verification and Validation': 'This course introduces the topics of verification and validation of computer software. Material covered may include statistical and functional approaches to testing, test data analysis, testability, static analysis techniques, dynamic analysis techniques, selected state-of-the-art results, and real-world applications.',
+'Compilers and Interpreters': 'Introduction to modern compiler design: theory, techniques, and tools. Students will develop an interpreter or compiler. Assembler and preprocessors will also be briefly discussed.'
+}
+  
+    $('.ui.dropdown')
+      .dropdown();
+
+    function play() {
+      var selection = $("#music-selection")
+      options = Object.keys(selection['0']);
+      for (var i= 0 ; i < options.length; i++) {
+        if (selection['0'][i].selected) {
+          var val = selection['0'][i].value;
+          var audio = new Audio(val);
+          audio.play()
+        }
+      }
+    }
+
+    function showDescription() {
+      var selection = $('#course-selection')
+      options = Object.keys(selection['0']);
+      for (var i =0 ; i < options.length; i++) {
+        if (selection['0'][i].selected) {
+          var val = selection['0'][i].value;
+          $('#course-description').html(courses[val]);
+        }
+      }
+    }
+
+  </script>
